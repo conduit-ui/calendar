@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 
 interface CalendarProvider
 {
-    /** @return Collection<int, CalendarEvent> */
+    /** @return Collection<int, array{id: string, summary: string, primary: bool}> */
     public function listCalendars(): Collection;
 
     /** @return Collection<int, CalendarEvent> */
